@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import NameComponent from "./Components/NameComponent/NameComponent.js"
+import Age from './Components/Age/Age';
+import InputBox from './Components/InputBox/InputBox';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <NameComponent>This is Srikanth Kumar Karada</NameComponent>
+      <Age children="25" name="Srikanth" />
+      <InputBox />
+      {/* <NameComponent>My Father name is Arakhita Karada</NameComponent> */}
     </div>
   );
 }
